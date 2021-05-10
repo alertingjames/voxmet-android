@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">Voxmed</string>
+    <string name="navigation_drawer_open" translatable="false">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close" translatable="false">Navigation Drawer Close</string>
+    <string name="welcome_to">Bine ati venit</string>
+    <string name="voxmedapp">Voxmed</string>
+    <string name="email">Email</string>
+    <string name="password">Parola</string>
+    <string name="donthaveanaccount">Nu aveti un cont?</string>
+    <string name="forgotpassword">Ati uitat parola?</string>
+    <string name="signin">Autentificare</string>
+    <string name="signup">Inregistrare</string>
+    <string name="rememberpassword">Va aduceti aminte parola?</string>
+    <string name="haveaccount">Aveti deja un cont?</string>
+    <string name="name">Nume</string>
+    <string name="reports">Rapoarte</string>
+    <string name="myreports">Rapoartele mele</string>
+    <string name="report_detail">Informatii raport doctori</string>
+    <string name="here_doctor_report_text">Raportul doctorului...</string>
+    <string name="myprofile">Profilul meu</string>
+    <string name="settings">Setari</string>
+    <string name="logout">Iesire</string>
+    <string name="search_">Cauta...</string>
+    <string name="logged_out">Delogat</string>
+    <string name="iamdoctor">Sunt doctor</string>
+    <string name="addreport">Adauga Raport</string>
+    <string name="permission_message">Aceasta aplicatie are nevoie sa inregistreze audio vocea si sa o transforme in text </string>
+    <string name="listening">Ascult…</string>
+    <string name="load_file">Incarca fisier</string>
+    <string name="doctor">Doctor</string>
+    <string name="employee">Editori</string>
+    <string name="patient">Pacient</string>
+    <string name="load_profile_picture">Adaugati poza de profil.</string>
+    <string name="enter_name">Adaugati numele.</string>
+    <string name="enter_email">Adaugati email.</string>
+    <string name="enter_password">Adaugati parola.</string>
+    <string name="enter_valid_email">Adaugati email valid.</string>
+    <string name="select_role">Selectati rolul dvs.</string>
+    <string name="existing_user">V-ati inregistrat deja. Va rugam sa va autentificati.</string>
+    <string name="existing_email">Cineva utilieaza acelasi email. Va rugam sa folositi alta adresa.</string>
+    <string name="unregistered_user">Nu ati fost inregistrat. Va rugam sa va inscrieti.</string>
+    <string name="incorrect_password">Parola dumneavoastra este incorecta.</string>
+    <string name="login_success">V-ati autentificat cu succes.</string>
+    <string name="signup_success">V-ati inregistrat cu succes.</string>
+    <string name="server_issue">Probleme de server</string>
+    <string name="check_email">Va rugam sa va verificati email-ul.</string>
+    <string name="save">Salvati</string>
+    <string name="language">Limba</string>
+    <string name="english">Engleza</string>
+    <string name="romanian">Romana</string>
+    <string name="swedish">Suedeza</string>
+    <string name="real_time_report">Raport in timp real</string>
+    <string name="next">Continuare</string>
+    <string name="recording_started">Inregistrarea a inceput</string>
+    <string name="record">Inregistrare</string>
+    <string name="stop">Opreste</string>
+    <string name="play">Reda</string>
+    <string name="recording_stopped">Inregistrarea s-a oprit</string>
+    <string name="audio_playing">Redare audio</string>
+    <string name="playing_stopped">Redarea s-a oprit</string>
+    <string name="please_record_report">Va rugam sa inregistrati raportul in timp real</string>
+    <string name="click_on_record_to_speak_here">Faceti click pe butonul Inregistrare pentru a vorbi aici...</string>
+    <string name="submit">Salvati</string>
+    <string name="reviewed_and_corrected">Revizuit si corectat</string>
+    <string name="load_picture">Incarcati poza</string>
+    <string name="enter_patient_ID">Introduceti ID-ul pacientului</string>
+    <string name="optional">Optional</string>
+    <string name="unexisting_patient">Pacientul nu exista</string>
+    <string name="submitted">Trimis</string>
+    <string name="patientID">ID-ul pacientului:</string>
+    <string name="select_patient">Selecteaza un pacient</string>
+    <string name="no_result">Nu au fost incarcate date&#8230;</string>
+    <string name="corrected">Corectat</string>
+    <string name="loading">Se incarca...</string>
+    <string name="refreshing">Reincarca...</string>
+    <string name="image_downloaded_at">Imagine descarcata la</string>
+    <string name="correct_report">Corectati raportul</string>
+    <string name="resubmitted">Retrimis</string>
+    <string name="unexisting_report">Acest raport nu exista</string>
+    <string name="please_stop_recording">Va rugam sa opriti inregistrarea</string>
+    <string name="please_stop_playing">Va rugam sa opriti redarea</string>
+    <string name="resubmit">Retrimiteti</string>
+    <string name="reset">Resetare</string>
+
+    <string name="age">Vârstă</string>
+    <string name="addpatient">Adăugați pacient</string>
+    <string name="newpatient">Pacient nou</string>
+    <string name="enter_age">Introduceți vârsta</string>
+    <string name="share_">Trimiteti raportul</string>
+    <string name="load_pictures">Încărcați imagini</string>
+    <string name="newpatientadded">Pacient nou a fost adăugat.</string>
+
+
+    <string name="speech_prompt">Spuneti ceva&#8230;</string>
+    <string name="speech_not_supported">Ne pare rau! Dispozitivul dumneavoastra nu accepta introducerea de vorbire.</string>
+
+    <string name="enter_keyword">Introduceți cuvântul cheie</string>
+
+
+    <string name="enter_content">Introduceți conținut</string>
+    <string name="complete_form">Completați acest formular</string>
+    <string name="change_template">Schimbă șablonul</string>
+    <string name="templates">Template-uri</string>
+    <string name="fillinemptyfields">Vă rugăm să completați câmpul gol.</string>
+
+    <string name="setupkeywords">Cuvinte cheie de configurare</string>
+    <string name="setup_keyword_template">Configurați cuvinte cheie pentru șablonul de raport.\nDragând elementul pentru a rearanja.</string>
+    <string name="add_keyword">+ Adaugă cuvânt cheie</string>
+    <string name="new_keyword">Cuvânt cheie nou</string>
+    <string name="cancel">Anulare</string>
+    <string name="add">Adăuga</string>
+    <string name="saved">salvată</string>
+    <string name="keywords">Cuvinte cheie</string>
+
+    <string name="complete_report">Vă rugăm să completați raportul.</string>
+
+    <string name="items">Articole:</string>
+    <string name="import_temp">Importați șablonul</string>
+    <string name="select">Selectați</string>
+    <string name="view_detail">Vezi detalii</string>
+    <string name="enter_temp_name">Introduceți numele șablonului.</string>
+
+    <string name="new_line">linie nouă</string>
+    <string name="next_">Următor →</string>
+    <string name="point">punct</string>
+    <string name="comma">virgulă</string>
+    <string name="space">spaţiu</string>
+
+    <string name="warning">Avertizare!</string>
+    <string name="areyousuredeletetemplate">Sigur doriți să ștergeți acest șablon?</string>
+    <string name="no">Nu</string>
+    <string name="yes">da</string>
+    <string name="sharevia">Distribuie prin</string>
+    <string name="whatsapp">WhatsApp</string>
+
+    <string name="patients">Pacienţii</string>
+    <string name="editpatient">Editează pacientul</string>
+
+    <string name="patient_updated">Pacient actualizat</string>
+    <string name="general_keywords">Cuvinte cheie generale</string>
+    <string name="change_keyword">Schimbați cuvântul cheie?</string>
+
+    <string name="patient_ID">ID-ul pacientului</string>
+    <string name="patient_name">Numele pacientului</string>
+    <string name="export_success">Export de succes</string>
+    <string name="export_failed">Exportul nu a reușit</string>
+    <string name="export">Export</string>
+
+    <string name="new_line_desc">Adaugati automat o linie noua in raport atunci cand vorbiti.</string>
+    <string name="generalkeyworddesc">Adaugati un punct in raport atunci cand vorbiti.</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

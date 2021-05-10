@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voxmed</string>
+    <string name="navigation_drawer_open" translatable="false">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close" translatable="false">Navigation Drawer Close</string>
+    <string name="welcome_to">Välkommen till</string>
+    <string name="voxmedapp">Voxmed App</string>
+    <string name="email">E-postadress</string>
+    <string name="password">Lösenord</string>
+    <string name="donthaveanaccount">Har du inte ett konto?</string>
+    <string name="forgotpassword">Glömt ditt lösenord?</string>
+    <string name="signin">Logga in</string>
+    <string name="signup">Bli Medlem</string>
+    <string name="rememberpassword">Kom ihåg lösenord?</string>
+    <string name="haveaccount">Har du konto?</string>
+    <string name="name">Namn</string>
+    <string name="reports">Rapporter</string>
+    <string name="myreports">Mina rapporter</string>
+    <string name="report_detail">Läkarens rapportdetalj</string>
+    <string name="here_doctor_report_text">Här är läkarens rapporttext ...</string>
+    <string name="myprofile">Min profil</string>
+    <string name="settings">Inställningar</string>
+    <string name="logout">Logga ut</string>
+    <string name="search_">Sök...</string>
+    <string name="logged_out">Utloggad</string>
+    <string name="iamdoctor">Jag är en läkare</string>
+    <string name="addreport">Lägg till rapport</string>
+    <string name="permission_message">Denna app måste spela in ljud och känna igen ditt tal.</string>
+    <string name="listening">Lyssnande…</string>
+    <string name="load_file">Ladda fil</string>
+    <string name="doctor">Läkare</string>
+    <string name="employee">Anställd</string>
+    <string name="patient">Patient</string>
+    <string name="load_profile_picture">Ladda din profilbild.</string>
+    <string name="enter_name">Ange ditt namn.</string>
+    <string name="enter_email">Skriv in din e-postadress.</string>
+    <string name="enter_password">Ange ditt lösenord.</string>
+    <string name="enter_valid_email">Ange en giltig e-postadress.</string>
+    <string name="select_role">Välj din roll.</string>
+    <string name="existing_user">Du har redan registrerats. Vänligen logga in.</string>
+    <string name="existing_email">Någon använder samma e-post. Försök med en annan.</string>
+    <string name="unregistered_user">Du har inte registrerats. Registrera dig.</string>
+    <string name="incorrect_password">Ditt lösenord är felaktigt.</string>
+    <string name="login_success">Du loggade in.</string>
+    <string name="signup_success">Du registrerade framgångsrikt.</string>
+    <string name="server_issue">Serverproblem</string>
+    <string name="check_email">Kontrollera din e-postadress.</string>
+    <string name="save">Spara</string>
+    <string name="language">Språk</string>
+    <string name="english">Engelsk</string>
+    <string name="romanian">Rumänska</string>
+    <string name="swedish">Svenska</string>
+    <string name="real_time_report">Realtidsrapport</string>
+    <string name="next">Nästa</string>
+    <string name="recording_started">Inspelningen startade</string>
+    <string name="record">Spela in</string>
+    <string name="stop">Sluta</string>
+    <string name="play">Spela</string>
+    <string name="recording_stopped">Inspelningen stoppades</string>
+    <string name="audio_playing">Spela ljud</string>
+    <string name="playing_stopped">Spelningen stannade</string>
+    <string name="please_record_report">Spela in realtidsrapport.</string>
+    <string name="click_on_record_to_speak_here">Klicka på Record-knappen för att tala här ...</string>
+    <string name="submit">Lämna</string>
+    <string name="reviewed_and_corrected">Granskad och korrigerad</string>
+    <string name="load_picture">Ladda bild</string>
+    <string name="enter_patient_ID">Ange patient-ID</string>
+    <string name="optional">Valfri</string>
+    <string name="unexisting_patient">Denna patient existerar inte</string>
+    <string name="submitted">Lämnats</string>
+    <string name="patientID">Patient-ID:</string>
+    <string name="select_patient">Välj en patient</string>
+    <string name="no_result">Inga uppladdade data&#8230;</string>
+    <string name="corrected">Rättad</string>
+    <string name="loading">Läser in...</string>
+    <string name="refreshing">Uppfriskande...</string>
+    <string name="image_downloaded_at">Bilden laddas ner på</string>
+    <string name="correct_report">Rätt rapport</string>
+    <string name="resubmitted">Omprövas</string>
+    <string name="unexisting_report">Den rapporten finns inte</string>
+    <string name="please_stop_recording">Sluta inspelningen</string>
+    <string name="please_stop_playing">Sluta spela</string>
+    <string name="resubmit">Skicka</string>
+    <string name="reset">Återställa</string>
+
+    <string name="age">Ålder</string>
+    <string name="addpatient">Lägg till patient</string>
+    <string name="newpatient">Ny patient</string>
+    <string name="enter_age">Ange ålder</string>
+    <string name="share_">Skicka in rapporten</string>
+    <string name="load_pictures">Ladda bilder</string>
+    <string name="newpatientadded">Ny patient har lagts till.</string>
+
+
+    <string name="speech_prompt">Säg något&#8230;</string>
+    <string name="speech_not_supported">Förlåt! Din enhet stöder inte talinmatning</string>
+
+    <string name="enter_keyword">Ange nyckelord</string>
+
+
+    <string name="enter_content">Ange innehåll</string>
+    <string name="complete_form">Fyll i detta formulär</string>
+    <string name="change_template">Byt mall</string>
+    <string name="templates">mallar</string>
+    <string name="fillinemptyfields">Fyll i det tomma fältet.</string>
+
+    <string name="setupkeywords">Setup nyckelord</string>
+    <string name="setup_keyword_template">Ställ in nyckelord för rapportmallen.\nDra objekt för att ordna om.</string>
+    <string name="add_keyword">+ Lägg till nyckelord</string>
+    <string name="new_keyword">Nytt sökord</string>
+    <string name="cancel">Avbryt</string>
+    <string name="add">Lägg till</string>
+    <string name="saved">sparade</string>
+    <string name="keywords">Nyckelord</string>
+
+    <string name="complete_report">Fyll i rapporten.</string>
+
+    <string name="items">Articole</string>
+    <string name="import_temp">Importați șablonul</string>
+    <string name="select">Selectați</string>
+    <string name="view_detail">Vezi detalii</string>
+    <string name="enter_temp_name">Introduceți numele șablonului.</string>
+
+    <string name="new_line">ny linje</string>
+    <string name="next_">Nästa</string>
+    <string name="point">punkt</string>
+    <string name="comma">kommatecken</string>
+    <string name="space">rymden</string>
+
+    <string name="warning">Varning!</string>
+    <string name="areyousuredeletetemplate">Är du säker på att du vill ta bort den här mallen?</string>
+    <string name="no">Nej</string>
+    <string name="yes">Ja</string>
+    <string name="sharevia">Dela via</string>
+    <string name="whatsapp">WhatsApp</string>
+
+    <string name="patients">patienter</string>
+    <string name="editpatient">Redigera patient</string>
+
+    <string name="patient_updated">Patient uppdaterad</string>
+    <string name="general_keywords">Allmänna nyckelord</string>
+    <string name="change_keyword">Vill du ändra nyckelordet?</string>
+
+    <string name="patient_ID">Patient-ID</string>
+    <string name="patient_name">Patientnamn</string>
+    <string name="export_success">Exporten lyckades</string>
+    <string name="export_failed">Exporten misslyckades</string>
+    <string name="export">Exportera</string>
+
+    <string name="new_line_desc">Lägg automatiskt till en ny rad i rapporten när du talar.</string>
+    <string name="generalkeyworddesc">Lägg till en punkt i rapporten när du talar.</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

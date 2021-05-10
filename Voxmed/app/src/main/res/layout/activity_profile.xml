@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_report"
+    android:id="@+id/activity"
+    tools:context=".main.SignupActivity">
+
+    <ImageView
+        android:id="@+id/pictureBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        android:src="@drawable/patient"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/myprofile"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/roleBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/patient"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+
+        <FrameLayout
+            android:id="@+id/pictureFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pictureBox"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/patient"/>
+            <ImageView
+                android:id="@+id/cameraButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.3"
+                android:layout_marginTop="62dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:src="@drawable/cameraico"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/name"/>
+
+                <EditText
+                    android:id="@+id/nameBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email"/>
+
+                <EditText
+                    android:id="@+id/emailBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ageFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/age"/>
+
+                    <EditText
+                        android:id="@+id/ageBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="number"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/password"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/passwordButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:background="#FAE9FF"
+                        android:text="@string/reset"
+                        android:textSize="14sp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_shadow"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/resubmit"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="back"
+        android:src="@drawable/leftarrow"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicator="LineScaleParty"
+        app:indicator_color="#F53700" />
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

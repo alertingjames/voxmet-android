@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.AddNewReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_gradient_rect"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/primary_gradient_rect">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="back"
+                    android:src="@drawable/leftarrow"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/real_time_report"/>
+
+                <TextView
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="right|bottom"
+                    android:textSize="12sp"
+                    android:layout_marginRight="8dp"
+                    android:drawableRight="@drawable/ic_setting_white"
+                    android:drawablePadding="5dp"
+                    android:text="@string/import_temp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Record"
+                        android:background="@null"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:id="@+id/record"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Stop"
+                        android:visibility="visible"
+                        android:layout_marginLeft="15dp"
+                        android:background="@null"
+                        android:textColor="@color/button_unabled"
+                        android:textSize="14sp"
+                        android:id="@+id/stop"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Play"
+                        android:background="@null"
+                        android:textColor="@color/button_unabled"
+                        android:textSize="14sp"
+                        android:id="@+id/play"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/item_result"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/item_result"/>
+            </FrameLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/resultBox"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:background="@null"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_top_shadow">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chk_corrected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F1E5FF"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/reviewed_and_corrected"
+                        android:paddingRight="8dp"/>
+
+                    <ImageButton
+                        android:id="@+id/nextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/button_shadow"
+                        android:src="@drawable/rightarrow"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicator="LineScaleParty"
+        app:indicator_color="#F53700" />
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

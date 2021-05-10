@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.AddReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/primary_gradient_rect"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/primary_gradient_rect">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:onClick="back"
+                android:src="@drawable/leftarrow"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/real_time_report"/>
+
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="@string/next"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:id="@+id/record"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:visibility="visible"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:id="@+id/stop"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Play"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:id="@+id/play"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/resultBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColor="@color/text"
+                android:hint="Click on Record button to speak here..."
+                android:inputType="textCapSentences"
+                android:singleLine="false"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

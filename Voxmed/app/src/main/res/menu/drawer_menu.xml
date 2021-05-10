@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addreport"
+            android:icon="@drawable/ic_report"
+            android:title="@string/addreport"/>
+        <item
+            android:id="@+id/addpatient"
+            android:icon="@drawable/ic_patient"
+            android:title="@string/addpatient"/>
+        <item
+            android:id="@+id/patients"
+            android:icon="@drawable/patients"
+            android:title="@string/patients"/>
+        <item
+            android:id="@+id/keywords"
+            android:icon="@drawable/ic_keyword"
+            android:title="@string/general_keywords"/>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/account"
+            android:title="@string/myprofile"/>
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout"/>
+    </group>
+
+</menu>

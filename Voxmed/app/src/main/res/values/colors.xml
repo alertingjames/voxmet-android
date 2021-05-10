@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#914cf8</color>
+    <color name="colorPrimaryDark">#7625f5</color>
+    <color name="colorAccent">#f541e0</color>
+    <color name="lightPrimary">#A963EE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="text">#DF000000</color>
+    <color name="circle_fill_color">#3066cfff</color>
+    <color name="circle_stroke_color">#bd5cc6ff</color>
+
+    <color name="status_hearing">#7B1FA2</color>
+    <color name="status_not_hearing">#757575</color>
+    <color name="button_unabled">#86FFFFFF</color>
+
+    <color name="app_color">#8EAE3C</color>
+    <color name="list_item_background">#AACCCCCC</color>
+
+</resources>

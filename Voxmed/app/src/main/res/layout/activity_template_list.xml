@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity"
+    tools:context=".main.TemplateListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="50dp"
+            style="@style/ToolBarWithNavigationBack"
+            android:background="@drawable/primary_gradient_rect"
+            android:layout_width="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:text="@string/templates"
+                    android:textSize="22sp"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    android:id="@+id/search_bar">
+                    <LinearLayout
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="0px"
+                        android:layout_height="0px" />
+                    <EditText
+                        android:id="@+id/edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/lightPrimary"
+                        android:hint="Search..."
+                        android:imeOptions="actionSearch"
+                        android:drawableLeft="@drawable/search_white"
+                        android:layout_gravity="center_horizontal"
+                        android:drawablePadding="8dp"
+                        android:singleLine="true"
+                        android:padding="5dp"
+                        android:background="@null"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical|right">
+                    <ImageView
+                        android:id="@+id/searchButton"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/search_white"
+                        android:onClick="search"
+                        tools:ignore="OnClick" />
+                    <ImageView
+                        android:id="@+id/cancelButton"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="cancelSearch"
+                        android:src="@drawable/cancelicon"/>
+
+                    <ImageView
+                        android:id="@+id/addButton"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="6dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="addTemplate"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_plus"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:dividerHeight="0dp"
+                android:divider="#edeef2"
+                android:paddingBottom="15dp"/>
+            <FrameLayout
+                android:id="@+id/no_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/noresult"
+                        android:layout_marginTop="50dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:text="No result found..."/>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#CDFFFFFF">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:indicator="LineScaleParty"
+            app:indicator_color="#F53700" />
+
+    </FrameLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
